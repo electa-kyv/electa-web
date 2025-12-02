@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Contribute to Electa — Know your vote.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="data/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="data/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="data/favicon_io/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="data/favicon_io/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="data/favicon_io/android-chrome-512x512.png" />
+  <link rel="manifest" href="data/favicon_io/site.webmanifest" />
+  <link rel="icon" type="image/x-icon" href="data/favicon_io/favicon.ico" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <div data-include="header"></div>
+
+  <main class="main-shell interior-shell">
+    <section class="page-section contribute-section">
+      <h2>Contribute to Electa</h2>
+      <p class="section-intro">
+        Select an option to help improve Electa.
+      </p>
+
+      <form id="contributeForm" class="contribute-form">
+        <div class="form-group">
+          <label for="contributeType" class="form-label">Select an option:</label>
+          <select 
+            id="contributeType" 
+            name="contributeType" 
+            class="form-select" 
+            required
+          >
+            <option value="">-- Please select --</option>
+            <option value="Suggest an Update">Suggest an Update</option>
+            <option value="Contribute Candidate Info">Contribute Candidate Info</option>
+            <option value="Report Missing or Incorrect Details">Report Missing or Incorrect Details</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <textarea 
+            id="contributeMessage" 
+            name="message" 
+            class="form-textarea" 
+            rows="6" 
+            placeholder="Please provide details about your contribution..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="primary-btn send-btn" id="sendBtn">
+          Send
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="app.js"></script>
+  <script src="contribute.js"></script>
+</body>
+</html>
+

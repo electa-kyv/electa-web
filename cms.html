@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>CMS — Publish Articles</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="data/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="data/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="data/favicon_io/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="data/favicon_io/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="data/favicon_io/android-chrome-512x512.png" />
+  <link rel="manifest" href="data/favicon_io/site.webmanifest" />
+  <link rel="icon" type="image/x-icon" href="data/favicon_io/favicon.ico" />
+  <style>
+    .cms-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .cms-header {
+      margin-bottom: 2rem;
+    }
+
+    .cms-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cms-form {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--marine-400);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .form-group textarea {
+      min-height: 200px;
+      resize: vertical;
+    }
+
+    .form-group textarea#content {
+      min-height: 400px;
+      font-family: 'Courier New', monospace;
+    }
+
+    .form-group small {
+      display: block;
+      margin-top: 0.25rem;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.875rem;
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: var(--marine-400);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--marine-600);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-success {
+      background: #4caf50;
+      color: var(--white);
+    }
+
+    .btn-success:hover {
+      background: #45a049;
+    }
+
+    .preview-section {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .preview-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .preview-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .alert {
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+
+    .alert-success {
+      background: rgba(76, 175, 80, 0.2);
+      border: 1px solid rgba(76, 175, 80, 0.5);
+      color: #81c784;
+    }
+
+    .alert-error {
+      background: rgba(244, 67, 54, 0.2);
+      border: 1px solid rgba(244, 67, 54, 0.5);
+      color: #e57373;
+    }
+
+    .alert.show {
+      display: block;
+    }
+
+    .existing-articles {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .existing-articles h2 {
+      margin-bottom: 1rem;
+    }
+
+    .article-list-item {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .article-list-item-info h3 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.125rem;
+    }
+
+    .article-list-item-info p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.875rem;
+    }
+
+    .article-list-item-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn-small {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <div data-include="header"></div>
+
+  <main class="blog-main">
+    <div class="cms-container">
+      <header class="cms-header">
+        <h1>Article CMS</h1>
+        <p class="blog-subtitle">Create and publish articles for your blog</p>
+      </header>
+
+      <div id="alertContainer"></div>
+
+      <form id="articleForm" class="cms-form">
+        <input type="hidden" id="articleId" name="id">
+
+        <div class="form-group">
+          <label for="title">Article Title *</label>
+          <input type="text" id="title" name="title" required placeholder="Enter article title">
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author Name *</label>
+          <input type="text" id="author" name="author" required placeholder="Author name">
+        </div>
+
+        <div class="form-group">
+          <label for="featuredImage">Featured Image URL *</label>
+          <input type="url" id="featuredImage" name="featuredImage" required placeholder="https://example.com/image.jpg">
+          <small>Enter the full URL to the featured image</small>
+        </div>
+
+        <div class="form-group">
+          <label for="excerpt">Excerpt *</label>
+          <textarea id="excerpt" name="excerpt" required placeholder="A brief summary of the article (2-3 sentences)" rows="3"></textarea>
+          <small>This will appear on the blog listing page</small>
+        </div>
+
+        <div class="form-group">
+          <label for="content">Article Content *</label>
+          <textarea id="content" name="content" required placeholder="Write your article content here. You can use markdown-like syntax:
+          
+## Headers
+**Bold text** and *italic text*
+[Link text](https://example.com)
+
+Paragraphs are separated by blank lines."></textarea>
+          <small>Supports markdown-like syntax: **bold**, *italic*, [links](url), ## headers</small>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Publish Date</label>
+          <input type="datetime-local" id="date" name="date">
+          <small>Leave empty to use current date/time</small>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Publish Article</button>
+          <button type="button" class="btn btn-secondary" id="previewBtn">Preview</button>
+          <button type="button" class="btn btn-secondary" id="clearBtn">Clear Form</button>
+          <button type="button" class="btn btn-success" id="downloadBtn">Download JSON</button>
+        </div>
+      </form>
+
+      <div class="preview-section" id="previewSection" style="display: none;">
+        <h2>Preview</h2>
+        <div id="previewContent" class="preview-card"></div>
+      </div>
+
+      <div class="existing-articles">
+        <h2>Existing Articles</h2>
+        <div id="articlesList">
+          <p>Loading articles...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="app.js"></script>
+  <script src="blog.js"></script>
+  <script>
+    // CMS-specific functionality
+    class CMS {
+      constructor() {
+        this.form = document.getElementById('articleForm');
+        this.previewBtn = document.getElementById('previewBtn');
+        this.clearBtn = document.getElementById('clearBtn');
+        this.downloadBtn = document.getElementById('downloadBtn');
+        this.articlesList = document.getElementById('articlesList');
+        this.init();
+      }
+
+      async init() {
+        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+        this.previewBtn.addEventListener('click', () => this.showPreview());
+        this.clearBtn.addEventListener('click', () => this.clearForm());
+        this.downloadBtn.addEventListener('click', () => this.downloadJSON());
+        
+        await this.loadExistingArticles();
+      }
+
+      async handleSubmit(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this.form);
+        const articleData = {
+          id: formData.get('id') || null,
+          title: formData.get('title'),
+          author: formData.get('author'),
+          featuredImage: formData.get('featuredImage'),
+          excerpt: formData.get('excerpt'),
+          content: formData.get('content'),
+          date: formData.get('date') ? new Date(formData.get('date')).toISOString() : new Date().toISOString()
+        };
+
+        // Validate
+        if (!articleData.title || !articleData.author || !articleData.featuredImage || 
+            !articleData.excerpt || !articleData.content) {
+          this.showAlert('Please fill in all required fields', 'error');
+          return;
+        }
+
+        try {
+          // Save article using BlogManager
+          if (window.blogManager) {
+            await window.blogManager.saveArticle(articleData);
+            this.showAlert('Article published successfully!', 'success');
+            this.clearForm();
+            await this.loadExistingArticles();
+            
+            // Download updated JSON
+            setTimeout(() => {
+              window.blogManager.downloadArticlesJSON();
+            }, 500);
+          } else {
+            // Fallback: save to localStorage and download
+            this.saveToLocalStorage(articleData);
+            this.showAlert('Article saved! Download the JSON file and replace data/articles.json', 'success');
+            this.clearForm();
+            await this.loadExistingArticles();
+          }
+        } catch (error) {
+          console.error('Error saving article:', error);
+          this.showAlert('Error saving article. Please try again.', 'error');
+        }
+      }
+
+      saveToLocalStorage(articleData) {
+        try {
+          let articles = JSON.parse(localStorage.getItem('articles_backup') || '{"articles":[]}');
+          if (!articleData.id) {
+            articleData.id = Date.now().toString(36) + Math.random().toString(36).substr(2);
+          }
+          const index = articles.articles.findIndex(a => a.id === articleData.id);
+          if (index >= 0) {
+            articles.articles[index] = articleData;
+          } else {
+            articles.articles.unshift(articleData);
+          }
+          articles.articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+          localStorage.setItem('articles_backup', JSON.stringify(articles));
+        } catch (error) {
+          console.error('Error saving to localStorage:', error);
+        }
+      }
+
+      showPreview() {
+        const formData = new FormData(this.form);
+        const previewContent = document.getElementById('previewContent');
+        const previewSection = document.getElementById('previewSection');
+        
+        if (!formData.get('title')) {
+          this.showAlert('Please fill in at least the title to preview', 'error');
+          return;
+        }
+
+        const article = {
+          title: formData.get('title') || 'Preview Title',
+          author: formData.get('author') || 'Author',
+          date: formData.get('date') ? new Date(formData.get('date')).toISOString() : new Date().toISOString(),
+          featuredImage: formData.get('featuredImage') || 'https://via.placeholder.com/800x400',
+          excerpt: formData.get('excerpt') || 'Preview excerpt...',
+          content: formData.get('content') || 'Preview content...'
+        };
+
+        previewContent.innerHTML = window.blogManager.createArticleCard(article);
+        previewSection.style.display = 'block';
+        previewSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      clearForm() {
+        this.form.reset();
+        document.getElementById('articleId').value = '';
+        document.getElementById('previewSection').style.display = 'none';
+      }
+
+      async loadExistingArticles() {
+        if (!window.blogManager) {
+          this.articlesList.innerHTML = '<p>Blog manager not loaded</p>';
+          return;
+        }
+
+        await window.blogManager.loadArticles();
+        const articles = window.blogManager.articles;
+
+        if (articles.length === 0) {
+          this.articlesList.innerHTML = '<p>No articles yet. Create your first article above!</p>';
+          return;
+        }
+
+        this.articlesList.innerHTML = articles.map(article => {
+          const date = new Date(article.date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+          });
+          return `
+            <div class="article-list-item">
+              <div class="article-list-item-info">
+                <h3>${this.escapeHtml(article.title)}</h3>
+                <p>By ${this.escapeHtml(article.author)} • ${date}</p>
+              </div>
+              <div class="article-list-item-actions">
+                <button class="btn btn-secondary btn-small" onclick="cms.editArticle('${article.id}')">Edit</button>
+                <a href="article.html?id=${article.id}" class="btn btn-primary btn-small" target="_blank">View</a>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      editArticle(articleId) {
+        if (!window.blogManager) return;
+        
+        const article = window.blogManager.articles.find(a => a.id === articleId);
+        if (!article) return;
+
+        document.getElementById('articleId').value = article.id;
+        document.getElementById('title').value = article.title;
+        document.getElementById('author').value = article.author;
+        document.getElementById('featuredImage').value = article.featuredImage;
+        document.getElementById('excerpt').value = article.excerpt;
+        document.getElementById('content').value = article.content;
+        
+        const date = new Date(article.date);
+        const localDateTime = new Date(date.getTime() - date.getTimezoneOffset() * 60000)
+          .toISOString()
+          .slice(0, 16);
+        document.getElementById('date').value = localDateTime;
+
+        document.getElementById('articleForm').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      downloadJSON() {
+        if (window.blogManager) {
+          window.blogManager.downloadArticlesJSON();
+          this.showAlert('JSON file downloaded! Replace data/articles.json with this file.', 'success');
+        } else {
+          this.showAlert('Blog manager not loaded', 'error');
+        }
+      }
+
+      showAlert(message, type) {
+        const alertContainer = document.getElementById('alertContainer');
+        const alert = document.createElement('div');
+        alert.className = `alert alert-${type} show`;
+        alert.textContent = message;
+        alertContainer.innerHTML = '';
+        alertContainer.appendChild(alert);
+
+        setTimeout(() => {
+          alert.classList.remove('show');
+          setTimeout(() => alert.remove(), 300);
+        }, 5000);
+      }
+
+      escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+    }
+
+    // Initialize CMS when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        window.cms = new CMS();
+      });
+    } else {
+      window.cms = new CMS();
+    }
+  </script>
+</body>
+</html>
+

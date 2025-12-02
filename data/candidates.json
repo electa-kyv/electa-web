@@ -1,0 +1,994 @@
+{
+  "metadata": {
+    "lastUpdated": "01-12-2025",
+    "source": "Australian Electoral Commission (AEC) 2025 candidate lists + public party / media sources",
+    "lastCheckedBy": {
+      "entity": "Electa",
+      "date": "01-12-2025"
+    }
+  },
+  "candidates": {
+    "Bass": [
+      {
+        "name": "Lauren Ball",
+        "party": "Tasmanian Greens",
+        "profession": "Student",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Jack Fittler",
+        "party": "Tasmanian Greens",
+        "profession": "Policy and Parliamentary Adviser",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Tom Hall",
+        "party": "Tasmanian Greens",
+        "profession": "Medical Doctor",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Anne Layton‑Bennett",
+        "party": "Tasmanian Greens",
+        "profession": "Writer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Charlene McLennan",
+        "party": "Tasmanian Greens",
+        "profession": "Solicitor",
+        "bio": "Environmental volunteer committed to clean rivers, sustainable forestry, and climate‑ready jobs.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Eric March",
+        "party": "Tasmanian Greens",
+        "profession": "Dentist",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Cecily Rosol",
+        "party": "Tasmanian Greens",
+        "profession": "Member of Parliament",
+        "bio": "Greens MP for Bass — re‑elected in 2025. Focused on regional health and environmental sustainability in northern Tasmania.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Angela Armstrong",
+        "party": "The Nationals",
+        "profession": "Lawyer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Carl Cooper",
+        "party": "The Nationals",
+        "profession": "Farmer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Melissa Anderson",
+        "party": "Australian Labor Party",
+        "profession": "Public Servant",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Janie Finlay",
+        "party": "Australian Labor Party",
+        "profession": "Member of Parliament",
+        "bio": "Labor MP for Bass, re‑elected 2025 — advocates for social services and regional development in northern Tasmania.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Will Gordon",
+        "party": "Australian Labor Party",
+        "profession": "Registered Nurse",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Jess Greene",
+        "party": "Australian Labor Party",
+        "profession": "Union Organiser",
+        "bio": "Labor candidate in Bass 2025 — focused on workers’ rights and cost‑of‑living pressures.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Geoff Lyons",
+        "party": "Australian Labor Party",
+        "profession": "Retired",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Luke Moore",
+        "party": "Australian Labor Party",
+        "profession": "Marine Engineer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Peter Thomas",
+        "party": "Australian Labor Party",
+        "profession": "Finance Executive",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Bridget Archer",
+        "party": "Liberal Party",
+        "profession": "Farmer",
+        "bio": "Independent MHA for Bass, re‑elected in 2025. Known for community‑focused initiatives and local engagement in northern Tasmania.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Rob Fairs",
+        "party": "Liberal Party",
+        "profession": "Member of Parliament",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Michael Ferguson",
+        "party": "Liberal Party",
+        "profession": "Member of Parliament",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Chris Gatenby",
+        "party": "Liberal Party",
+        "profession": "Senior Adviser",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Sarah Quaile",
+        "party": "Liberal Party",
+        "profession": "Government Adviser",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Julie Sladden",
+        "party": "Liberal Party",
+        "profession": "Councillor",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Simon Wood",
+        "party": "Liberal Party",
+        "profession": "Member of Parliament",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "George Razay",
+        "party": "Independent",
+        "profession": "Physician",
+        "bio": "Local advocate pushing for transparent decision‑making and improved community consultation.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Michal Frydrych",
+        "party": "Independent",
+        "profession": "Retired",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Jack Davenport",
+        "party": "Independent",
+        "profession": "Social Worker",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Fenella Edwards",
+        "party": "Independent",
+        "profession": "Artist",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Daniel Groat",
+        "party": "Independent",
+        "profession": "Sales Representative",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Caroline Larner",
+        "party": "Independent",
+        "profession": "Owner Builder",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Rebekah Pentland",
+        "party": "Independent",
+        "profession": "Member of Parliament",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Tim Walker",
+        "party": "Independent",
+        "profession": "Councillor",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      }
+    ],
+    "Braddon": [
+      {
+        "name": "Vanessa Bleyer",
+        "party": "Tasmanian Greens",
+        "profession": "Lawyer",
+        "bio": "Seasoned environmental lawyer based in Stanley, active in conservation and native forest protection.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Haru Fergus",
+        "party": "Tasmanian Greens",
+        "profession": "Student",
+        "bio": "University student from Ulverstone and Greens campaign volunteer, interested in inclusion and accessible public transport.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Scott Jordan",
+        "party": "Tasmanian Greens",
+        "profession": "Campaigner",
+        "bio": "Environmental campaigner based in Burnie, active in conservation efforts in Tasmania’s north‑west.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Thomas Kingston",
+        "party": "Tasmanian Greens",
+        "profession": "Retired",
+        "bio": "Long‑time Greens supporter from Port Sorell contesting Braddon in 2025.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Erin Morrow",
+        "party": "Tasmanian Greens",
+        "profession": "Health Worker",
+        "bio": "Health‑sector worker in Devonport; candidate for Braddon representing the Greens in 2025.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Susanne Ward",
+        "party": "Tasmanian Greens",
+        "profession": "Manager",
+        "bio": "Small‑business operator in Devonport working in tourism; standing as Greens candidate for Braddon in 2025.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Petra Wilden",
+        "party": "Tasmanian Greens",
+        "profession": "Laboratory Technician",
+        "bio": "Science‑laboratory technician based in Tugrah and standing as a Greens candidate for Braddon.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Claudia Baldock",
+        "party": "Independent",
+        "profession": "Councillor",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Andrea Courtney",
+        "party": "Independent",
+        "profession": "Mental Health Worker",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Cristale Harrison",
+        "party": "Independent",
+        "profession": "Community Advocate",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Adam Martin",
+        "party": "Independent",
+        "profession": "Builder",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "James Redgrave",
+        "party": "Independent",
+        "profession": "Volunteer Leader",
+        "bio": "Community‑first volunteer in Braddon, dedicated to supporting local initiatives and regional engagement.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Malcolm Ryan",
+        "party": "Independent",
+        "profession": "Chocolatier",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Joel Badcock",
+        "party": "Independent",
+        "profession": "Consultant",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Craig Garland",
+        "party": "Independent",
+        "profession": "Member of Parliament",
+        "bio": "Independent MP for Braddon since 2024, representing a commitment to local issues and regional representation.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Ernst Millet",
+        "party": "Independent",
+        "profession": "Paramedic",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Matthew Morgan",
+        "party": "Independent",
+        "profession": "Tourism Boat Skipper",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Melissa Jane Wells",
+        "party": "Independent",
+        "profession": "Carer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      }
+    ],
+    "Clark": [
+      {
+        "name": "Ella Haddad",
+        "party": "Australian Labor Party",
+        "profession": "Member of Parliament",
+        "bio": "Current Labor MHA for Clark, re‑elected in 2025. Active in Hobart’s western shore suburbs representing social‑policy interests.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "John Kamara",
+        "party": "Australian Labor Party",
+        "profession": "Public Servant",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Liam McLaren",
+        "party": "Australian Labor Party",
+        "profession": "Event Organiser",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Tessa McLaughlin",
+        "party": "Australian Labor Party",
+        "profession": "Electrician",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Luke Martin",
+        "party": "Australian Labor Party",
+        "profession": "Adviser",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Craig Shirley",
+        "party": "Australian Labor Party",
+        "profession": "Union Administrative Officer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Josh Willie",
+        "party": "Australian Labor Party",
+        "profession": "Member of Parliament",
+        "bio": "Labor MHA for Clark, re‑elected 2025. Represents northern Hobart suburbs.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Vica Bayley",
+        "party": "Tasmanian Greens",
+        "profession": "Member of Parliament",
+        "bio": "Greens MHA for Clark since 2023; re‑elected in 2025. Active on environmental and social justice issues in Hobart’s western suburbs.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Helen Burnet",
+        "party": "Tasmanian Greens",
+        "profession": "Member of Parliament",
+        "bio": "Greens MHA for Clark, re‑elected 2025. Focuses on urban sustainability and community welfare.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Pat Caruana",
+        "party": "Tasmanian Greens",
+        "profession": "Media Adviser",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Peter Jones",
+        "party": "Tasmanian Greens",
+        "profession": "Volunteer Worker",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Janet Shelley",
+        "party": "Tasmanian Greens",
+        "profession": "Sustainability Manager",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Angus Templeton",
+        "party": "Tasmanian Greens",
+        "profession": "Tour Guide",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Nathan Volf",
+        "party": "Tasmanian Greens",
+        "profession": "Social Worker",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Kristie Johnston",
+        "party": "Independent",
+        "profession": "Member of Parliament",
+        "bio": "Independent MHA for Clark, re‑elected in 2025. Represents Glenorchy and outer western suburbs of Hobart. Known for community‑first independent representation.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Elise Archer",
+        "party": "Independent",
+        "profession": "Lawyer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Jessica Barnett",
+        "party": "Liberal Party",
+        "profession": "Adviser",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Simon Behrakis",
+        "party": "Liberal Party",
+        "profession": "Member of Parliament",
+        "bio": "Liberal MHA for Clark, served since 2023; re‑elected 2025. Represents New Town and surrounding suburbs.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Marilena Di Florio",
+        "party": "Liberal Party",
+        "profession": "Senior Program Officer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Edwin Johnstone",
+        "party": "Liberal Party",
+        "profession": "Self Employed",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Madeleine Ogilvie",
+        "party": "Liberal Party",
+        "profession": "Member of Parliament",
+        "bio": "Liberal MHA for Clark, re‑elected 2025. Former member (2014–2018) and returning representative for Hobart western‑shore suburbs.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Marcus Vermey",
+        "party": "Liberal Party",
+        "profession": "Butcher",
+        "bio": "Liberal MHA for Clark elected in 2025. Local small‑business background represents working‑class interests.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "David Wan",
+        "party": "Liberal Party",
+        "profession": "Policy Officer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Jags Goldsmith",
+        "party": "Independent",
+        "profession": "Mentor",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "John MacGowan",
+        "party": "Independent",
+        "profession": "Public Relations Consultant",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Steven Phipps",
+        "party": "Independent",
+        "profession": "Scientist",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      }
+    ],
+    "Franklin": [
+      {
+        "name": "Meg Brown",
+        "party": "Australian Labor Party",
+        "profession": "Politician",
+        "bio": "Labor MP for Franklin elected 2025.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Kaspar Deane",
+        "party": "Australian Labor Party",
+        "profession": "Teacher / Local Councillor",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Traycee Di Virgilio",
+        "party": "Australian Labor Party",
+        "profession": "Director",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Chris Hannan",
+        "party": "Australian Labor Party",
+        "profession": "Mental Health Social Worker",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Amelia Meyers",
+        "party": "Australian Labor Party",
+        "profession": "Student",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Jess Munday",
+        "party": "Australian Labor Party",
+        "profession": "Union Secretary",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "David O'Byrne",
+        "party": "Independent",
+        "profession": "Unavailable",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Peter George",
+        "party": "Independent",
+        "profession": "Journalist",
+        "bio": "Independent MP elected for Franklin in 2025. Previously contested the 2025 federal election for the same seat, and polled among highest primary votes of state‑election candidates.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Louise Cherrie",
+        "party": "Independent",
+        "profession": "Environmental Consultant",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Anthony Houston",
+        "party": "Independent",
+        "profession": "Retired Farmer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Andrew Jenner",
+        "party": "Independent",
+        "profession": "House Husband",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Kirsten Bacon",
+        "party": "Independent",
+        "profession": "Educator",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Rayne Allinson",
+        "party": "Independent",
+        "profession": "Writer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Chrissie Materia",
+        "party": "Independent",
+        "profession": "Consultant",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Sarah Gibbens",
+        "party": "Independent",
+        "profession": "Business Owner",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Carly Allen",
+        "party": "Tasmanian Greens",
+        "profession": "Graphic Designer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Brian Chapman",
+        "party": "Tasmanian Greens",
+        "profession": "Retired",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Gideon Cordover",
+        "party": "Tasmanian Greens",
+        "profession": "Councillor",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Mark Donnellon",
+        "party": "Tasmanian Greens",
+        "profession": "Software Engineer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      }
+    ],
+    "Lyons": [
+      {
+        "name": "Carlo Di Falco",
+        "party": "Shooters, Fishers, Farmers TAS",
+        "profession": "Retired",
+        "bio": "Retired advocate from Forcett, focused on rural issues and community participation in Lyons.",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Francis Haddon-Cave",
+        "party": "The Nationals",
+        "profession": "Retired",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Andrew Jenner",
+        "party": "The Nationals",
+        "profession": "Member of Parliament",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Rick Mandelson",
+        "party": "The Nationals",
+        "profession": "Accountant",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Lesley Pyecroft",
+        "party": "The Nationals",
+        "profession": "Registered Nurse",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "John Tucker",
+        "party": "The Nationals",
+        "profession": "Farmer",
+        "bio": "Unavailable",    
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Alistair Allan",
+        "party": "Tasmanian Greens",
+        "profession": "Environmental Campaigner",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Tabatha Badger",
+        "party": "Tasmanian Greens",
+        "profession": "Member of Parliament",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Craig Brown",
+        "party": "Tasmanian Greens",
+        "profession": "Retired Medical Practitioner",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Joey Cavanagh",
+        "party": "Tasmanian Greens",
+        "profession": "Retail Worker",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Mitch Houghton",
+        "party": "Tasmanian Greens",
+        "profession": "Social Work Student",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Hannah Rubenach‑Quinn",
+        "party": "Tasmanian Greens",
+        "profession": "Small Business Owner",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Isabel Shapcott",
+        "party": "Tasmanian Greens",
+        "profession": "Support Officer",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      },
+      {
+        "name": "Angela Offord",
+        "party": "Independent",
+        "profession": "Veterinarian",
+        "bio": "Unavailable",
+        "policies": [],
+        "socials": {},
+        "contact": ""
+      }
+    ]
+  }
+}

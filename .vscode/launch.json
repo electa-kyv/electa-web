@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Electa Localhost",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cmd.exe /c \"cd C:\\Users\\keela\\electa && live-server --port=5500\"",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "first-election",
+    "title": "Your First Election",
+    "description": "A simple guidebook to help first-time voters understand how to vote, what to expect at the polls, and how to research candidates with confidence.",
+    "price": 3,
+    "image": "data/shop_photos/first-election.png"
+  }
+]

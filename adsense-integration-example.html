@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdSense Integration Example — Electa</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="cookie-consent.css" />
+</head>
+<body>
+  <div data-include="header"></div>
+
+  <main class="blog-main">
+    <div class="blog-container">
+      <header class="blog-header">
+        <h1>AdSense Integration Example</h1>
+        <p class="blog-subtitle">This page demonstrates how to integrate Google AdSense with cookie consent</p>
+      </header>
+
+      <!-- ============================================ -->
+      <!-- GOOGLE ADSENSE AD - TOP BANNER              -->
+      <!-- ============================================ -->
+      <!-- This ad requires user consent for advertising cookies -->
+      <!-- It will only display after user accepts cookies -->
+      <div class="ad-slot-google ad-slot-top" data-ad-position="top">
+        <!-- 
+          STEP 1: Replace ca-pub-XXXXXXXXXXXXXXXX with your AdSense Publisher ID
+          STEP 2: Replace XXXXXXXXXX with your Ad Unit ID
+          STEP 3: Uncomment the <ins> tag below
+        -->
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        -->
+        
+        <!-- Loading placeholder (will be replaced when ad loads) -->
+        <div class="ad-loading">Advertisement</div>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- ELECTA PARTNER AD - ALWAYS VISIBLE          -->
+      <!-- ============================================ -->
+      <!-- This ad is always visible, no consent required -->
+      <div class="ad-slot-partner ad-slot-top" data-ad-position="partner-top">
+        <!-- Replace this entire div with your partner's ad code -->
+        <div class="ad-partner-content">
+          <div class="ad-partner-icon">💡</div>
+          <div class="ad-partner-text">Your ad here – Electa Partner Opportunity!</div>
+          <div class="ad-partner-subtext">Reach engaged voters and community members</div>
+        </div>
+        
+        <!-- OR use an image/banner ad: -->
+        <!--
+        <a href="https://partner-website.com" target="_blank">
+          <img src="partner-ad-banner.jpg" alt="Partner Advertisement" style="width: 100%; height: auto;">
+        </a>
+        -->
+      </div>
+
+      <!-- ============================================ -->
+      <!-- SAMPLE CONTENT                              -->
+      <!-- ============================================ -->
+      <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+        <h2>How It Works</h2>
+        
+        <h3>1. Cookie Consent Banner</h3>
+        <p>When users first visit, they'll see a cookie consent banner at the bottom of the page. They can either:</p>
+        <ul>
+          <li><strong>Accept All</strong> - Enables all cookies including advertising</li>
+          <li><strong>Manage Preferences</strong> - Choose which cookies to enable</li>
+        </ul>
+
+        <h3>2. Google AdSense Ads</h3>
+        <p>Google ads (with class <code>.ad-slot-google</code>) will only load if the user accepts advertising cookies. This ensures GDPR compliance.</p>
+
+        <h3>3. Partner Ads</h3>
+        <p>Electa partner ads (with class <code>.ad-slot-partner</code>) are always visible and don't require consent since they're not personalized or tracked.</p>
+
+        <h3>4. Testing</h3>
+        <p>To test the cookie consent flow:</p>
+        <ol>
+          <li>Open this page in a private/incognito window</li>
+          <li>You should see the cookie banner</li>
+          <li>Try both "Accept All" and "Manage Preferences"</li>
+          <li>Check that Google ads appear only after accepting advertising cookies</li>
+        </ol>
+
+        <p><button class="cookie-settings-link" style="background: var(--marine-400); color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem;">
+          Click here to manage cookie preferences
+        </button></p>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- GOOGLE ADSENSE AD - IN-FEED                 -->
+      <!-- ============================================ -->
+      <!-- Example of an in-feed ad unit -->
+      <div class="ad-slot-google ad-slot-middle" data-ad-position="middle">
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-fb+5w+4e-db+86"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"></ins>
+        -->
+        <div class="ad-loading">Advertisement</div>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- GOOGLE ADSENSE AD - RESPONSIVE BANNER       -->
+      <!-- ============================================ -->
+      <!-- Example of a responsive banner ad -->
+      <div class="ad-slot-google ad-slot-bottom" data-ad-position="bottom">
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        -->
+        <div class="ad-loading">Advertisement</div>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- PARTNER AD - BOTTOM                         -->
+      <!-- ============================================ -->
+      <div class="ad-slot-partner ad-slot-bottom" data-ad-position="partner-bottom">
+        <div class="ad-partner-content">
+          <div class="ad-partner-icon">🤝</div>
+          <div class="ad-partner-text">Advertise with Electa</div>
+          <div class="ad-partner-subtext">Premium placement for community partners</div>
+        </div>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- INTEGRATION CHECKLIST                       -->
+      <!-- ============================================ -->
+      <div style="background: rgba(75, 115, 162, 0.1); padding: 2rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--marine-400);">
+        <h2>Integration Checklist</h2>
+        
+        <h3>Before Going Live:</h3>
+        <ul>
+          <li>☐ Sign up for Google AdSense and get approved</li>
+          <li>☐ Get your AdSense Publisher ID (ca-pub-XXXXXXXXXXXXXXXX)</li>
+          <li>☐ Create ad units in AdSense dashboard</li>
+          <li>☐ Update <code>cookie-consent.js</code> line ~260 with your Publisher ID</li>
+          <li>☐ Replace all ad unit placeholders in HTML with your actual ad codes</li>
+          <li>☐ Uncomment the <code>&lt;ins class="adsbygoogle"&gt;</code> tags</li>
+          <li>☐ Update <code>privacy.html</code> with cookie policy details</li>
+          <li>☐ Test in private/incognito mode</li>
+          <li>☐ Verify ads load after accepting cookies</li>
+          <li>☐ Test on mobile devices</li>
+        </ul>
+
+        <h3>For Partner Ads:</h3>
+        <ul>
+          <li>☐ Replace placeholder content with actual ad code/images</li>
+          <li>☐ Add proper tracking links if needed</li>
+          <li>☐ Ensure images are optimized for web</li>
+          <li>☐ Test responsiveness on all screen sizes</li>
+        </ul>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- CODE EXAMPLES                               -->
+      <!-- ============================================ -->
+      <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+        <h2>Code Examples</h2>
+
+        <h3>Example 1: Standard Responsive Ad</h3>
+        <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>&lt;div class="ad-slot-google ad-slot-top"&gt;
+  &lt;ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-1234567890123456"
+       data-ad-slot="9876543210"
+       data-ad-format="auto"
+       data-full-width-responsive="true"&gt;&lt;/ins&gt;
+&lt;/div&gt;</code></pre>
+
+        <h3>Example 2: Partner Image Ad</h3>
+        <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>&lt;div class="ad-slot-partner ad-slot-top"&gt;
+  &lt;a href="https://partner.com" target="_blank"&gt;
+    &lt;img src="ad-banner.jpg" 
+         alt="Partner Ad" 
+         style="width: 100%; height: auto;"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+        <h3>Example 3: Partner HTML Ad</h3>
+        <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>&lt;div class="ad-slot-partner ad-slot-middle"&gt;
+  &lt;div style="text-align: center; padding: 2rem;"&gt;
+    &lt;h3&gt;Special Offer!&lt;/h3&gt;
+    &lt;p&gt;Get 20% off with code ELECTA20&lt;/p&gt;
+    &lt;a href="https://partner.com/offer" 
+       style="display: inline-block; 
+              padding: 0.75rem 1.5rem; 
+              background: #4caf50; 
+              color: white; 
+              text-decoration: none; 
+              border-radius: 6px;"&gt;
+      Claim Offer
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+    </div>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <!-- Load scripts in order -->
+  <script src="app.js"></script>
+  <script src="cookie-consent.js"></script>
+  
+  <!-- 
+    The cookie consent system will automatically:
+    1. Show the consent banner on first visit
+    2. Load AdSense script if user accepts advertising cookies
+    3. Initialize all ads with class .ad-slot-google
+    4. Show partner ads immediately (no consent needed)
+  -->
+</body>
+</html>
+

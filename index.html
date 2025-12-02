@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Electa — Know your vote.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cookie-consent.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="data/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="data/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="data/favicon_io/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="data/favicon_io/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="data/favicon_io/android-chrome-512x512.png" />
+  <link rel="manifest" href="data/favicon_io/site.webmanifest" />
+  <link rel="icon" type="image/x-icon" href="data/favicon_io/favicon.ico" />
+</head>
+<body>
+  <div data-include="header"></div>
+
+  <main class="main-shell home-shell" aria-labelledby="countdownHeading">
+    <section class="center-card countdown-card">
+      <p class="eyebrow">Next state election</p>
+      <h1 id="countdownHeading">Countdown to election day</h1>
+
+      <div class="countdown-time" role="timer" aria-live="polite">
+        <div class="countdown-unit">
+          <span id="countdownMonths">—</span>
+          <small>Months</small>
+        </div>
+        <div class="countdown-unit">
+          <span id="countdownWeeks">—</span>
+          <small>Weeks</small>
+        </div>
+        <div class="countdown-unit">
+          <span id="countdownDays">—</span>
+          <small>Days</small>
+        </div>
+      </div>
+      
+
+      <p id="countdownMeta" class="countdown-meta">Calculating remaining time…</p>
+
+      <a id="findElectorateBtn" class="primary-btn" href="electorates.html">Find My Electorate</a>
+      <p class="tagline">&ldquo;Know your vote.&rdquo;</p>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="app.js"></script>
+  <script src="cookie-consent.js"></script>
+</body>
+</html>
