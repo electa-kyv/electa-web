@@ -264,13 +264,6 @@ class CookieConsent {
   }
 
   applyConsent() {
-    // Load Google Ads if advertising consent is given
-    if (this.preferences.advertising) {
-      this.loadGoogleAds();
-    } else {
-      this.hideGoogleAds();
-    }
-
     // Load analytics if consent is given
     if (this.preferences.analytics) {
       this.loadAnalytics();
@@ -280,65 +273,6 @@ class CookieConsent {
     window.dispatchEvent(new CustomEvent('cookieConsentUpdated', {
       detail: this.preferences
     }));
-  }
-
-  loadGoogleAds() {
-    const adSlots = document.querySelectorAll('.ad-slot-google');
-    adSlots.forEach(slot => {
-      slot.classList.add('consent-given', 'ad-fade-in');
-      
-      // Check if AdSense script is already loaded
-      if (!window.adsbygoogle) {
-        this.loadAdSenseScript();
-      }
-      
-      // Initialize ads in this slot if not already done
-      if (!slot.dataset.initialized) {
-        this.initializeAdSlot(slot);
-        slot.dataset.initialized = 'true';
-      }
-    });
-  }
-
-  hideGoogleAds() {
-    const adSlots = document.querySelectorAll('.ad-slot-google');
-    adSlots.forEach(slot => {
-      slot.classList.remove('consent-given');
-    });
-  }
-
-  loadAdSenseScript() {
-    // Only load if not already present
-    if (document.querySelector('script[src*="adsbygoogle"]')) {
-      return;
-    }
-
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8906392448287945';
-    script.crossOrigin = 'anonymous';
-    
-    script.onerror = () => {
-      console.warn('Failed to load Google AdSense script');
-    };
-
-    document.head.appendChild(script);
-  }
-
-  initializeAdSlot(slot) {
-    // Show loading state
-    slot.innerHTML = '<div class="ad-loading">Loading advertisement...</div>';
-
-    // Check if slot already has ad content
-    const existingAd = slot.querySelector('ins.adsbygoogle');
-    if (existingAd && !existingAd.dataset.adsbygoogleStatus) {
-      try {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-        slot.classList.add('loaded');
-      } catch (error) {
-        console.error('Error initializing ad:', error);
-      }
-    }
   }
 
   loadAnalytics() {
@@ -397,7 +331,6 @@ class CookieConsent {
     localStorage.removeItem(this.consentKey);
     localStorage.removeItem(this.preferencesKey);
     this.preferences = { ...this.defaultPreferences };
-    this.hideGoogleAds();
     this.showBanner();
   }
 
