@@ -1,18 +1,14 @@
-// EmailJS Configuration
-const EMAILJS_PUBLIC_KEY = 'fDK-ZKgTUBC1gA8en';
-const EMAILJS_SERVICE_ID = 'service_7d7pxfp';
-const EMAILJS_TEMPLATE_ID = 'template_uz2prhf';
+// Contribution form handler - sends email via mailto link
+
+const RECIPIENT_EMAIL = 'electa.kyv@gmail.com';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize EmailJS
-  emailjs.init(EMAILJS_PUBLIC_KEY);
-
   // Handle form submission
   const form = document.getElementById('contributeForm');
   const sendBtn = document.getElementById('sendBtn');
   const contributeTypeSelect = document.getElementById('contributeType');
   
-  form.addEventListener('submit', async (e) => {
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
     
     // Get contribution type from dropdown
@@ -31,47 +27,31 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Disable send button during submission
-    sendBtn.disabled = true;
-    sendBtn.textContent = 'Sending...';
-
-    try {
-      // Get current timestamp
-      const timestamp = new Date().toLocaleString('en-AU', {
-        dateStyle: 'full',
-        timeStyle: 'long',
-        timeZone: 'Australia/Hobart'
-      });
-      
-      // Get browser information
-      const browser = navigator.userAgent;
-      
-      // Prepare email template parameters
-      const templateParams = {
-        subject: `Electa Contribution: ${contributionType}`,
-        contributionType: contributionType,
-        message: message,
-        timestamp: timestamp,
-        browser: browser
-      };
-
-      // Send email via EmailJS
-      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
-
-      // Success
-      alert('Thank you! Your contribution has been submitted.');
-      
-      // Clear the form
+    // Get current timestamp
+    const timestamp = new Date().toLocaleString('en-AU', {
+      dateStyle: 'full',
+      timeStyle: 'long',
+      timeZone: 'Australia/Hobart'
+    });
+    
+    // Prepare email subject and body
+    const subject = encodeURIComponent(`Electa Contribution: ${contributionType}`);
+    const emailBody = encodeURIComponent(
+      `Contribution Type: ${contributionType}\n\n` +
+      `Message:\n${message}\n\n` +
+      `Submitted: ${timestamp}`
+    );
+    
+    // Create mailto link
+    const mailtoLink = `mailto:${RECIPIENT_EMAIL}?subject=${subject}&body=${emailBody}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Clear the form after a short delay
+    setTimeout(() => {
       form.reset();
-      
-    } catch (error) {
-      console.error('EmailJS error:', error);
-      alert('There was an error sending your contribution. Please try again.');
-    } finally {
-      // Re-enable send button
-      sendBtn.disabled = false;
-      sendBtn.textContent = 'Send';
-    }
+      alert('Your email client should open. Please send the email to complete your contribution.');
+    }, 500);
   });
 });
-
